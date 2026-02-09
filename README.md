@@ -6,10 +6,11 @@ Overview:
 =
 This project uses SQL to analyze the Netflix Movies and TV Shows dataset and answer business-driven questions related to content distribution, ratings, geography, genres, actors, and release trends. The goal is to demonstrate strong SQL querying and analytical thinking through realistic use cases.
 
-Dataset: Public Netflix Movies & TV Shows dataset (CSV)
+Dataset: Netflix Movies & TV Shows dataset (CSV)
 =
-Key columns: type, title, director, cast, country, release_year, date_added, rating, duration, listed_in, description
-=
+Key columns:=
+type, title, director, cast, country, release_year, date_added, rating, duration, listed_in, description
+
 Business Questions Covered:
 =
 Movies vs TV Shows count
