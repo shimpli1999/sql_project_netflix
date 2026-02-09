@@ -1,81 +1,53 @@
-Netflix Data Analysis using SQL
-Business Questions & Insights
-Project Overview:
+-- =====================================================
+-- Netflix Data Analysis using SQL
+-- Business Questions & Insights
+-- =====================================================
 
-This project explores the Netflix content catalog using SQL to answer realistic business and analytics questions.
-The objective is to demonstrate data querying, aggregation, window functions, and text analysis skills by extracting meaningful insights from structured entertainment data.
+-- Project Overview:
+-- This project analyzes the Netflix Movies and TV Shows dataset using SQL
+-- to answer business-focused analytical questions. The objective is to
+-- demonstrate data aggregation, window functions, filtering, and basic
+-- text analysis to extract meaningful insights from structured data.
 
-The analysis covers content distribution, ratings trends, regional production patterns, genre insights, and keyword-based content classification.
- 
-Business Problems Solved
-1️⃣ Content Distribution
+-- =====================================================
+-- Business Problems Solved
+-- =====================================================
 
--Counted the number of Movies vs TV Shows available on Netflix to understand content mix.
+-- 1. Content Distribution
+-- Counted the number of Movies vs TV Shows to understand overall content mix.
 
-2️⃣ Rating Analysis
+-- 2. Rating Analysis
+-- Identified the most common rating for Movies and TV Shows using aggregation
+-- and ranking logic.
 
--Identified the most common rating separately for Movies and TV Shows using aggregation and ranking logic.
+-- 3. Time-Based Analysis
+-- Listed Movies released in a specific year (e.g., 2020).
+-- Retrieved content added to Netflix in the last 5 years.
 
-3️⃣ Time-based Filtering
+-- 4. Geographic Insights
+-- Identified the top 5 countries producing the most Netflix content.
+-- Analyzed India-specific releases to find average yearly content output
+-- and the top 5 years with the highest production volume.
 
--Listed all Movies released in a specific year (e.g., 2020) to analyze yearly content releases.
+-- 5. Content Duration
+-- Identified the longest movie using duration parsing and ordering.
 
--Retrieved content added to Netflix in the last 5 years to study platform growth trends.
+-- 6. Director-Based Analysis
+-- Retrieved all Movies and TV Shows directed by James Wan.
+-- Identified content records with missing director information.
 
-4️⃣ Geographic Insights
+-- 7. TV Show Structure
+-- Listed TV Shows with more than 5 seasons.
 
--Identified the top 5 countries producing the most Netflix content.
+-- 8. Genre Analysis
+-- Counted content items by genre.
+-- Filtered Movies classified as Documentaries.
 
--Analyzed India-specific releases to find:
+-- 9. Actor-Based Insights
+-- Calculated the number of Movies featuring Salman Khan in the last 10 years.
+-- Identified the top 10 actors appearing in Movies produced in India.
 
--Average content releases per year
-
-Top 5 years with the highest average production volume
-
-5️⃣ Content Duration Analysis
-
--Identified the longest movie in the dataset using duration parsing and ordering.
-
-6️⃣ Director-based Analysis
-
--Retrieved all Movies and TV Shows directed by James Wan.
-
--Identified content entries missing director information, highlighting data quality issues.
-
-7️⃣ TV Show Structure
-
--Listed all TV Shows with more than 5 seasons, useful for engagement and longevity analysis.
-
-8️⃣ Genre Analysis
-
--Counted the number of content items in each genre to understand content diversity and viewer preferences.
-
--Filtered and listed Movies categorized specifically as Documentaries.
-
-9️⃣ Actor-based Insights
-
--Calculated how many Movies Salman Khan appeared in over the last 10 years.
-
--Identified the top 10 actors appearing in the highest number of Movies produced in India.
-
-🔟 Content Classification (Text Analysis)
-
--Categorized content descriptions based on the presence of keywords:
-
-‘kill’ or ‘violence’
-
-Labeled content as:
-
-‘Bad’ → if keywords are present
-
-‘Good’ → otherwise
-
-Counted how many items fall into each category to demonstrate text-based classification logic using SQL.
-
-
-
-
-
-
-
-
+-- 10. Content Classification
+-- Classified content as 'Bad' if descriptions contain keywords
+-- ('kill', 'violence') and 'Good' otherwise.
+-- Counted items in each category using conditional logic.
